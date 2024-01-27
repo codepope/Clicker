@@ -6,7 +6,7 @@ Currently, there's a minimal counter (set the clock to zero), timed rep counter 
 
 TODO:
 
-* [] Make it work well across all Apple platforms.
-* [] Make a Apple watch variant
-* [] Make it pretty
+* [ ] Make it work well across all Apple platforms.
+* [ ] Make a Apple watch variant
+* [ ] Make it pretty
 
