@@ -10,3 +10,5 @@ TODO:
 * [ ] Make a Apple watch variant
 * [ ] Make it pretty
 
+Note: This code includes code (The PushSafer Library) that is licensed under the LGPL and is potentially incompatible with the MIT licences for this code. Given that the LGPL code in question is always statically linked with the final binaries though (most microcontrollers lack dynamic linking) it is technically impossible for a user to ever be able to comply with the terms of the LGPL. 
+
