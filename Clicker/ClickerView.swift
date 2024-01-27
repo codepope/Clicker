@@ -22,7 +22,7 @@ struct ClickerView: View {
     var body: some View {
         VStack {
             if timer != nil {
-                Text("\(remainSeconds)").padding().font(.custom("Menlo", size: 128, relativeTo: .headline)).frame(width: .infinity,height:200.0).border(Color.black, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).frame(width:300,height:300).onReceive(timer!) { time in
+                Text("\(remainSeconds)").padding().font(.custom("Menlo", size: 128, relativeTo: .headline)).frame(width: 500.0,height:200.0).border(Color.black, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/).onReceive(timer!) { time in
                     if(ticking) {
                         if remainSeconds > 0 {
                             remainSeconds -= 1
@@ -36,7 +36,7 @@ struct ClickerView: View {
                     }
                 }
             } else {
-                Text("--").padding().font(.custom("Menlo", size: 128, relativeTo: .headline)).frame(width: .infinity,height:200.0).border(Color.black,width:1).padding()
+                Text("--").padding().font(.custom("Menlo", size: 128, relativeTo: .headline)).frame(width: 500.0,height:200.0).border(Color.black,width:1).padding()
             }
                 Stepper((seconds>0) ? "Start at \(seconds)s" : "Count only",
                         value: $seconds,
